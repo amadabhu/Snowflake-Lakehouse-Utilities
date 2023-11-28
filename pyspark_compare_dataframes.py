@@ -184,7 +184,8 @@ class MetricsComparator:
             connection_type = 's3',
             format = 'csv')
             print("compare table written to s3")
-    
+
+        
         # main
         source_df, target_df = create_dataframes()
         comp_df = compare_dataframes(source_df, target_df)
