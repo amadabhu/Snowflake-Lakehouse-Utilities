@@ -161,7 +161,7 @@ class MetricsComparator:
             df: DataFrame - DataFrame to be written to S3
             output_bucket: str - Path to the output location in S3
             """
-            bucket_prefix = 'we/validation/' + current_date # datetime.today().strftime('%Y/%m/%d/')
+            bucket_prefix = 'validation/' + current_date # datetime.today().strftime('%Y/%m/%d/')
             
             output_df_spk = spark.createDataFrame(df) # convert to spark
             output_df_dyn = DynamicFrame.fromDF(output_df_spk, glueContext, "dym_frame").repartition(1) # convert to dynamicframe
