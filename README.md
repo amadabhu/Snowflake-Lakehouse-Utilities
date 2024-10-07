@@ -4,7 +4,7 @@ data ingestion functions. The SQL_queries contain queries I wrote as part of an 
 
 # The stack
 
-- Python 
+- Python 3.10
 - AWS
 - Snowflake
 
