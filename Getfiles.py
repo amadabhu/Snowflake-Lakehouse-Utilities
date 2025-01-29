@@ -7,10 +7,7 @@
 from zipfile38 import ZipFile
 import os
 import pandas as pd
-import xml.etree.ElementTree as ET
 import csv
-from bs4 import BeautifulSoup
-import lxml
 import xmlparser
 import time
 import SnowflakeUpload
