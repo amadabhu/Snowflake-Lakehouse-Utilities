@@ -66,10 +66,6 @@ def call_parser():
 
 if __name__ == '__main__':
     t1 = time.time()
-    #zipfiles = get_file_names(directory)
-    #unzipfps = extractor(zipfiles)
-    #call_parser()
-    #MAParser.parsefiles()
     SnowflakeUpload.add_timestamp()
     conn = SnowflakeUpload.snowflakeconn()
     SnowflakeUpload.uploadsingle(conn)
